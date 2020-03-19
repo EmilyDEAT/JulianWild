@@ -1,29 +1,51 @@
 @font-face {
-  font-family: "mexicana";
-  src: url("Fonts/cf_mexicana/CFMexicanaPERSONALUSE-Regul.ttf")
+    font-family: "mexicana";
+    src: url("Fonts/cf_mexicana/CFMexicanaPERSONALUSE-Regul.ttf")
 }
 
 @font-face {
-  font-family: "roboto";
-  src: url("Fonts/roboto/Roboto-Regular.ttf")
+    font-family: "roboto";
+    src: url("Fonts/roboto/Roboto-Regular.ttf")
 }
 
 @font-face {
-  font-family: "rambler";
-  src: url("Fonts/the_rambler/The Rambler.ttf")
+    font-family: "rambler";
+    src: url("Fonts/the_rambler/The Rambler.ttf")
 }
 
 * {
-  margin: 0;
+    margin: 0;
 }
 
 body {
-  background-color: #F4F4F4;
+    background-color: #F4F4F4;
+    color: #141414;
 }
 
 main {
-  margin: auto;
-  width: 80%;
-  margin-top: 50px;
-  margin-bottom: 50px;
+    margin: auto;
+    width: 80%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+/* DARK MODE */
+
+:root {
+    --background-color: white;
+    --text-color: black;
+    /* to read: https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties */
+}
+
+[data-theme="dark"] {
+    /* to read: https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/data-* */
+    /* and https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors */
+    --background-color: black;
+    --text-color: white;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
