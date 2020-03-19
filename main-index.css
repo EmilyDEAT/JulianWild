@@ -1,85 +1,83 @@
-
 .featured-galleries {
-  font-family: "roboto";
-  text-align: center;
-  color: #141414;
-  margin-bottom: 1.5em;
-  font-size: 30px;
-  font-weight: 100;
-  letter-spacing: .15em;
-  line-height: 1.2em;
+    font-family: "roboto";
+    text-align: center;
+    margin-bottom: 1.5em;
+    font-size: 30px;
+    font-weight: 100;
+    letter-spacing: .15em;
+    line-height: 1.2em;
 }
 
 strong {
-  font-style: italic;
-  font-weight: 900;
+    font-style: italic;
+    font-weight: 900;
 }
+
 .container {
-  margin: auto;
+    margin: auto;
 }
 
 .container-country {
-  position: relative;
-  text-align: center;
-  margin-bottom: 10px;
-  transform: translate(0px, 0px);
-  transition: all 400ms ease;
+    position: relative;
+    text-align: center;
+    margin-bottom: 10px;
+    transform: translate(0px, 0px);
+    transition: all 400ms ease;
 }
 
 .image {
-  width: 100%;
-  display: block;
+    width: 100%;
+    display: block;
 }
-.overlay{
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 1;
-  transition: all 400ms ease;
-  background-color: rgba(0, 0, 0, 0.5);
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    transition: all 400ms ease;
+    background-color: rgba(0, 0, 0, 0.5);
 }
+
 .text-country {
-  position: absolute;
-  top: 50%; left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-family: "mexicana";
-  font-size: 15vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: "mexicana";
+    font-size: 15vw;
 }
 
-  /* Desktop Version */
+
+/* Desktop Version */
+
 @media (min-width: 641px) {
-  .container-country:hover .overlay {
-    opacity:1;
-  }
-
-  .container-country:hover {
-    transform: translate(10px, -10px);
-    box-shadow: -8px 8px 0px #009DA5
-  }
-
-  .overlay {
-    opacity: 0;
-    background-color: rgba(0, 157, 165, 0.5);
-  }
-
-  .container-country {
-    margin-bottom: 0;
-  }
-
-  .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 7vh;
-
-  }
-  
-  .text-country {
-    font-size: 7vw;
-  }
+    .container-country:hover .overlay {
+        opacity: 1;
+    }
+    .container-country:hover {
+        transform: translate(10px, -10px);
+        box-shadow: -8px 8px 0px #009DA5
+    }
+    .overlay {
+        opacity: 0;
+        background-color: rgba(0, 157, 165, 0.5);
+    }
+    .container-country {
+        margin-bottom: 0;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 7vh;
+    }
+    .text-country {
+        font-size: 7vw;
+    }
 }
