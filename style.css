@@ -34,6 +34,7 @@ main {
     font-size: 20px;
     border: none;
     cursor: pointer;
+    margin-right: 20px;
 }
 
 
@@ -42,15 +43,10 @@ main {
 :root {
     --background-color: #F4F4F4;
     --text-color: #141414;
-    ;
-    /* to read: https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties */
 }
 
 [data-theme="dark"] {
-    /* to read: https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/data-* */
-    /* and https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors */
     --background-color: #141414;
-    ;
     --text-color: #F4F4F4;
 }
 
