@@ -1,3 +1,5 @@
+// DARK MODE
+
 const darkMode = document.getElementById('dark-mode')
 
 darkMode.onclick = function() {
@@ -26,3 +28,14 @@ switch (savedDataTheme) {
         document.documentElement.setAttribute('data-theme', 'ligth')
         break
 }
+
+// EMAIL VERIFICATION FORM
+const aideEmail = document.getElementById("email");
+aideEmail.addEventListener("input", function(e) {
+    let email = e.target.value;
+    let border = "";
+    if (email.includes("@") === false) {
+        border = "2px solid red";
+    }
+    aideEmail.style.border = border;
+});
