@@ -63,14 +63,17 @@
 
 .container1 {
     overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
     width: 90%;
     justify-self: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 5px;
     margin: 20px;
+}
+
+.like {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 @media screen and (max-width: 1024px) {

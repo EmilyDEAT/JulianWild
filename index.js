@@ -30,12 +30,34 @@ switch (savedDataTheme) {
 }
 
 // EMAIL VERIFICATION FORM
-const aideEmail = document.getElementById("email");
-aideEmail.addEventListener("input", function(e) {
-    let email = e.target.value;
-    let border = "";
-    if (email.includes("@") === false) {
-        border = "2px solid red";
-    }
-    aideEmail.style.border = border;
-});
+// const aideEmail = document.getElementById("email");
+// aideEmail.addEventListener("input", function(e) {
+//     let email = e.target.value;
+//     let border = "";
+//     if (email.includes("@") === false) {
+//         border = "2px solid red";
+//     }
+//     aideEmail.style.border = border;
+// });
+
+
+// ADD FIGCAPTION
+const container1Length = document.getElementsByClassName("container1").length
+console.log(container1Length)
+
+for (let i = 0; i < container1Length; i++) {
+    const figcaptionElt = document.createElement("figcaption")
+    figcaptionElt.className = "like"
+    const imgLike = document.createElement("img")
+    imgLike.className = "img-like"
+    imgLike.src = "Logos/heart.svg"
+    imgLike.style.width = "25px"
+    imgLike.style.height = "25px"
+    imgLike.style.marginRight = "5px";
+    const pLike = document.createElement("p")
+    pLike.className = "p-like"
+    pLike.textContent = "0"
+    document.getElementsByClassName("container1")[i].appendChild(figcaptionElt)
+    document.getElementsByClassName("like")[i].appendChild(imgLike)
+    document.getElementsByClassName("like")[i].appendChild(pLike)
+}
