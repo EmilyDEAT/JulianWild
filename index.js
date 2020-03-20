@@ -30,15 +30,17 @@ switch (savedDataTheme) {
 }
 
 // EMAIL VERIFICATION FORM
-// const aideEmail = document.getElementById("email");
-// aideEmail.addEventListener("input", function(e) {
-//     let email = e.target.value;
-//     let border = "";
-//     if (email.includes("@") === false) {
-//         border = "2px solid red";
-//     }
-//     aideEmail.style.border = border;
-// });
+const aideEmail = document.getElementById("email");
+window.onload = function() {
+    aideEmail.addEventListener("input", function(e) {
+        let email = e.target.value;
+        let border = "";
+        if (email.includes("@") === false) {
+            border = "2px solid red";
+        }
+        aideEmail.style.border = border;
+    });
+}
 
 
 // ADD FIGCAPTION
@@ -60,4 +62,3 @@ for (let i = 0; i < container1Length; i++) {
     document.getElementsByClassName("container1")[i].appendChild(figcaptionElt)
     document.getElementsByClassName("like")[i].appendChild(imgLike)
     document.getElementsByClassName("like")[i].appendChild(pLike)
-}
